@@ -18,7 +18,7 @@ def rotateright(channel, event):
     explorerhat.light.off()
 
 def winchdown(channel, event):
-    explorerhat.light.blink(0.5,0.5)
+    explorerhat.light.yellow.blink(0.5,0.5)
     duration = 0.5
     explorerhat.motor.two.forward(100)
     sleep(duration)
@@ -26,7 +26,7 @@ def winchdown(channel, event):
     explorerhat.light.off()
 
 def winchup(channel, event):
-    explorerhat.light.blink(0.5,0.5)
+    explorerhat.light.blue.blink(0.5,0.5)
     duration = 0.5
     explorerhat.motor.two.backward(100)
     sleep(duration)
