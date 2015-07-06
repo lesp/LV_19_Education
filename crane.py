@@ -33,13 +33,9 @@ def winchup(channel, event):
     explorerhat.motor.two.stop()
     explorerhat.light.off()
 
- def magnet(channel, event):
- 	explorerhat.output.one.toggle()
-
 explorerhat.touch.one.pressed(rotateleft)
 explorerhat.touch.two.pressed(rotateright)
 explorerhat.touch.three.pressed(winchdown)
 explorerhat.touch.four.pressed(winchup)
-explorerhat.touch.eight.pressed(magnet)
 
   
